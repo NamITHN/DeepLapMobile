@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/default_content_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<!--
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/src_img"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <ImageView
+            android:id="@+id/segment_img"
+            android:scaleType="fitCenter"
+            android:tint="@color/colorAccent"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <ImageView
+            android:id="@+id/cropped_img"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+    </LinearLayout>-->
+
+    <fragment
+        android:id="@+id/fragment_segment_bitmaps"
+        android:name="com.dailystudio.deeplab.SegmentBitmapsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_pick_image"
+        android:src="@drawable/ic_action_pick_image"
+        android:enabled="false"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_mini_margin_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.design.widget.CoordinatorLayout>
